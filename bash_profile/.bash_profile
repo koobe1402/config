@@ -31,8 +31,8 @@ alias mv='mv -i'
 alias vi='vim'
 alias refresh_dns='sudo killall mDNSResponder'
 
-alias jump='ssh -i /Users/danielbadana/.ssh/id_rsa root@192.168.1.217'
-alias kvm='ssh -i /Users/danielbadana/.ssh/id_rsa root@192.168.1.100'
+alias jump='ssh -i /Users/koobe/.ssh/id_rsa root@192.168.1.217'
+alias kvm='ssh -i /Users/koobe/.ssh/id_rsa root@192.168.1.100'
 
 export HISTCONTROL=ignoreboth:erasedups
 

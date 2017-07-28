@@ -1,0 +1,11 @@
+"*":
+  core:
+    telemetryConsent: "no"
+    themes: [
+      "atom-dark-ui"
+      "dracula-theme"
+    ]
+  "exception-reporting":
+    userId: "acefc720-bb5e-503d-9228-c78052c63c3e"
+  welcome:
+    showOnStartup: false
