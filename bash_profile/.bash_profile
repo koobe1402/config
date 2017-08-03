@@ -1,5 +1,10 @@
 if [ "$TERM" = xterm ]; then TERM=xterm-256color; fi
 
+bold=$(tput bold)
+black=$(tput setaf 0)
+reset=$(tput sgr0)
+PS1='\[$black\]\[$bold\]${PWD#"${PWD%/*/*}/"}\[$reset\] ~> '
+
 bind 'set completion-ignore-case on'
 
 export CLICOLOR=1
@@ -30,6 +35,7 @@ alias cp='cp -i'
 alias mv='mv -i'
 alias vi='vim'
 alias refresh_dns='sudo killall mDNSResponder'
+alias repos='cd /Users/koobe/Documents/repos; ls -al'
 
 alias jump='ssh -i /Users/koobe/.ssh/id_rsa root@192.168.1.217'
 alias kvm='ssh -i /Users/koobe/.ssh/id_rsa root@192.168.1.100'
